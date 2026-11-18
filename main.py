@@ -139,7 +139,7 @@ def handle_message(event):
 
             # 呼叫 Gemini 模型
             completion = client.models.generate_content(
-                model="gemini-3.1-flash",
+                model="gemini-3.1-flash-line",
                 contents=contents,
                 config=search_generation_config
             ).text
